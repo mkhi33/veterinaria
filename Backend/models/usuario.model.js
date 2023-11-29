@@ -78,7 +78,8 @@ Usuario.obtener = async (emailUsuario, resultado) => {
             correo,
             direccion, 
             genero, 
-            estado_civil  
+            estado_civil,
+            rol_usuario  
         FROM tbl_usuario tu 
             INNER JOIN tbl_persona tp 
                 ON tp.id_persona = tu.id_persona 
